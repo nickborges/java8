@@ -1,12 +1,21 @@
 package classes;
 
 public class _C {
+	
 	private static int $;
 	
+	{ System.out.println("setting field"); }
+	
+	public _C(){
+		$ = 10;
+		System.out.println("setting constructor");
+	}
+	
 	public static void main(String args[]) {
-		String a_b = null;
-		System.out.println($);
-		System.out.println(a_b);
+		_C c = new _C();
+		System.out.println(c.$);
+		
+				
 	}
 
 }

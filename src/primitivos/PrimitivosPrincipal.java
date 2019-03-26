@@ -1,12 +1,11 @@
 package primitivos;
 
-import java.lang.invoke.VolatileCallSite;
 import java.math.BigInteger;
 
 public class PrimitivosPrincipal {
 
 	public static void main(String arg[]) {
-		/**primitivos**/
+		/*primitivos*/
 		boolean booleann = true;
 		byte	bytee	 = 127;					// 8-bit - 127 é o limite
 		short	shortt	 = 29999;				// 16-bit - 29999 é o limite
@@ -15,15 +14,23 @@ public class PrimitivosPrincipal {
 		float 	floatt	 = 299999999999999999999999999999999999999.99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999F;//32-bit
 		double	doublee	 = 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999.999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999D; // 64-bit
 		char	charr	 = 'a';
-		String aa = "asas";
-		
-		/**primitivos**/
+	
+		System.out.println(booleann 
+				+ "\n" + bytee 
+				+ "\n" + shortt 
+				+ "\n" + intt 
+				+ "\n" + longg 
+				+ "\n" + floatt 
+				+ "\n" + doublee 
+				+ "\n" + charr);
+		/*primitivos*/
 				
 		
-		/**Object**/
-		BigInteger bigint = new BigInteger("a",1);
+		/*Object*/
+		String aa = "asas";
+		BigInteger bigint = new BigInteger("a", 1);
 		
 		System.out.println(bigint.toString());
-		/**Object**/
+		/*Object*/
 	}
 }
