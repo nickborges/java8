@@ -4,11 +4,10 @@ public class OperatorsPrincipal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		short x = 14;
-		float y = 13;
-		double z = 30;
-		
-		System.out.println(x * y / z);
+		byte a = 1;
+		byte b = 2;
+		byte c = (byte)(a+b);
+		System.out.println(c);
 	}
 
 }
