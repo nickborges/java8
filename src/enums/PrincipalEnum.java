@@ -8,5 +8,8 @@ public class PrincipalEnum {
 		//System.out.println(ClasseEnum2.COD001.getCodigo());
 		ClasseEnum2 array[] = ClasseEnum2.values();
 		System.out.println(array[1].getCodigo());
+
+		System.out.println(EStatusNotificacao.fromString("positivas"));
+
 	}
 }
