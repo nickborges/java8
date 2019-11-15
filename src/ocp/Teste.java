@@ -15,7 +15,7 @@ class TestA{
     }
 
     public TestA(String str){
-        System.out.println(str);
+        System.out.println(str + "");
     }
 
     public List getA() {
