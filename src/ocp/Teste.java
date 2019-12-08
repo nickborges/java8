@@ -1,36 +1,21 @@
 package ocp;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
-class TestA{
-
-    private List a;
-
-    public TestA(){
-        a = new ArrayList();
-    }
-
-    public TestA(String str){
-        System.out.println(str + "");
-    }
-
-    public List getA() {
-        return a;
-    }
-
-    public void setA(List a) {
-        this.a = a;
-    }
+class Rodent {
 }
 
-public class Teste {
+public class Teste extends Rodent{
 
-    public static void main(String args[]) throws ParseException {
+    public static void main(String args[]) {
 
+        Rodent r = new Teste();
+        Teste t = (Teste)r;
+
+        if(r instanceof Teste)
+            System.out.println(true);
+
+        if(t instanceof Rodent)
+            System.out.println(true);
 
     }
 }
