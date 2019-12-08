@@ -4,6 +4,10 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.function.Supplier;
 
+/**
+ * A Supplier is used when you want to generate or supply values without taking any input.
+ *
+ */
 public class SupplierMain {
 
     public static void main(String args[]){

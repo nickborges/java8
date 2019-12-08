@@ -2,6 +2,13 @@ package ocp.functional_interface.predicate;
 
 import java.util.function.Predicate;
 
+class PredicateExample{
+
+
+    public static void test(){}
+
+}
+
 public class PredicateMain {
 
     public static void main(String args[]){
@@ -14,8 +21,6 @@ public class PredicateMain {
 
         System.out.println(p1p);
         System.out.println(p2p);
-
-
 
     }
 }
