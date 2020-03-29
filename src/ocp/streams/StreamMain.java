@@ -36,67 +36,12 @@ public class StreamMain {
         //closed stream after call size.count()
     }
 
-    //min, max
-    public static void minMaxStream(){
-        Stream<String> pos = Stream.of("a", "b", "c");
-        Optional<String> min = pos.min((a1, a2) -> a1.length() - a2.length());
-        min.ifPresent(System.out::println);
-        //closed stream after call pos.min()
-    }
-
-    //findAny
-    public static void findAny(){
-        Stream<String> f1 = Stream.of("any33", "any2", "any3");
-        Optional<String> any = f1.findAny();
-        any.ifPresent(System.out::println);
-        //closed stream after call f1.findAny()
-    }
-
-    //findFirst
-    public static void findFirst(){
-        Stream<String> f2 = Stream.of("first1","first2","first3");
-        Optional<String> first = f2.findFirst();
-        first.ifPresent(System.out::println);
-        //closed stream after call f2.findFirst()
-    }
-
-    public static void mapStream(){
-        List<Pessoa> p = Arrays.asList(
-                new Pessoa("Fulano", 20),
-                new Pessoa("Fulano1", 21),
-                new Pessoa("Fulano2", 22)
-        );
-
-        List<Estado> e = Arrays.asList(
-                new Estado("RS"),
-                new Estado("SP"),
-                new Estado("RJ")
-        );
-
-        TesteResponde t = new TesteResponde();
-        t.getPessoa().addAll(p.stream().map(PessoaDTO::new).collect(Collectors.toList()));
-        t.getEstados().addAll(e.stream().map(EstadoDTO::new).collect(Collectors.toList()));
-
-        t.getPessoa().forEach(f -> {
-            System.out.println(f);
-        });
-
-        t.getEstados().forEach(d -> {
-            System.out.println(d);
-        });
-
-    }
-
     public static void main(String args[]){
 
         /*streamFromList();
         finiteStream();
         infiniteStream();
-        countStream();
-        minMaxStream();
-        findAny();
-        findFirst();*/
+        countStream();*/
 
-        mapStream();
     }
 }
