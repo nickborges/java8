@@ -1,4 +1,4 @@
-package ocp.streams;
+package ocp.streams.dto;
 
 public class Pessoa {
     private String nome;

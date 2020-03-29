@@ -1,10 +1,7 @@
 package ocp.streams;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class StreamMain {
@@ -29,19 +26,11 @@ public class StreamMain {
         Stream<Integer> intege = Stream.iterate(1, n -> n + 2);
     }
 
-    //count
-    public static void countStream(){
-        Stream<String> size = Stream.of("a", "b", "c");
-        System.out.println(size.count());
-        //closed stream after call size.count()
-    }
-
     public static void main(String args[]){
 
-        /*streamFromList();
+        streamFromList();
         finiteStream();
         infiniteStream();
-        countStream();*/
 
     }
 }
