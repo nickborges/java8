@@ -1,5 +1,7 @@
 package oca.arraysAndMap;
 
+import java.util.Arrays;
+
 public class PrincipalArrays {
 
 	public static void teste(Object... param) {
@@ -20,11 +22,18 @@ public class PrincipalArrays {
 	public static void varargs(String... s){}
 	public static void array(String[] s){}
 
+	static void binarySearch(){
+		int[] numbers = {6,9,1,3,8};
+		Arrays.sort(numbers); // [1,3,6,8,9]
+		System.out.println(Arrays.binarySearch(numbers, 6)); // 1
+		System.out.println(Arrays.binarySearch(numbers, 4)); // -3 (-2 -1 = -3)
+	}
+
 	public static void main(String[] args) {
 		varargs("a", "b");
 		varargs(new String[]{"a"});
 		array(new String[]{"a"});
-
+		binarySearch();
 
 		//PrincipalArrays.teste(Arrays.asList("a", Arrays.asList("b")));
 
