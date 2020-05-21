@@ -1,8 +1,8 @@
 package ocp;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import com.sun.corba.se.impl.orbutil.ObjectUtility;
+
+import java.util.*;
 
 public class Teste{
 
@@ -38,12 +38,13 @@ public class Teste{
     }
 
     public static void main(String args[]) {
-        computeClosestToZero(new int[]{-3,-1,3,-2});
+        /*computeClosestToZero(new int[]{-3,-1,3,-2});
 
         int[] ret = towSumMap(new int[]{9,14,3,5,15,13,11,4,5,4}, 9);
         Arrays.stream(ret).forEach(f -> {
             System.out.println(f);
-        });
+        });*/
+
 
     }
 }

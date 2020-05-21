@@ -9,12 +9,12 @@ public class OptionalMain {
         //orElse
         Optional<String> o1 = Optional.ofNullable(null);
         String a = o1.orElse("CCC");
-        System.out.println(a);
+        System.out.println(a); //CCC
 
         //orElseGet
         Optional<Double> o2 = Optional.ofNullable(null);
         Double b = o2.orElseGet(() -> Math.random());
-        System.out.println(b);
+        System.out.println(b); // random number
 
         //orElseThrow
         Optional<String> o3 = Optional.ofNullable("ABC");

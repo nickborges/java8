@@ -1,4 +1,4 @@
-package oca.comparator;
+package oca.collections.comparator;
 
 import java.util.Comparator;
 

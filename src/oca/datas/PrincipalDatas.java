@@ -42,6 +42,8 @@ public class PrincipalDatas {
 		LocalDate dataVerificada = LocalDate.parse("16/04/2018", dtf);
 		System.out.println(dataVerificada);
 
+		LocalDate dataVerificada2 = LocalDate.parse("2018-04-16", DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+		System.out.println("Aqui >> "+ dataVerificada2);
 
 		System.out.println("Data Fixa:\t\t\t" +  fixa);
 		System.out.println();
@@ -69,14 +71,14 @@ public class PrincipalDatas {
 		System.out.println();
 
 		Period periodo = Period.between(fixa, data);
-		System.out.println("Diferença apenas Anos:\t\t" + periodo.getYears());
-	    System.out.println("Diferença apenas Meses:\t\t" + periodo.getMonths());
-	    System.out.println("Diferença apenas Dias:\t\t" + periodo.getDays());
+		System.out.println("Diferenï¿½a apenas Anos:\t\t" + periodo.getYears());
+	    System.out.println("Diferenï¿½a apenas Meses:\t\t" + periodo.getMonths());
+	    System.out.println("Diferenï¿½a apenas Dias:\t\t" + periodo.getDays());
 	    System.out.println();
 
-	    System.out.println("Diferença Total em dias:\t" + ChronoUnit.DAYS.between(fixa, data));
-	    System.out.println("Diferença Total em meses:\t" + ChronoUnit.MONTHS.between(fixa, data));
-	    System.out.println("Diferença Total em anos:\t" + ChronoUnit.YEARS.between(fixa, data));
+	    System.out.println("Diferenï¿½a Total em dias:\t" + ChronoUnit.DAYS.between(fixa, data));
+	    System.out.println("Diferenï¿½a Total em meses:\t" + ChronoUnit.MONTHS.between(fixa, data));
+	    System.out.println("Diferenï¿½a Total em anos:\t" + ChronoUnit.YEARS.between(fixa, data));
 		System.out.println();
 
 	    Duration duracao = Duration.between(dataTime, dataTime2);
