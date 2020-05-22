@@ -37,25 +37,57 @@ public class LinkedListVsArrayList {
         return fim-ini;
     }
 
+    private static long insereElementosInicio(List<Integer> numeros, int quantidade) {
+        long ini = System.currentTimeMillis();
+        for (int i = 0; i < quantidade; i++) {
+            numeros.add(0);
+        }
+        long fim = System.currentTimeMillis();
+        return fim-ini;
+    }
+
+    private static long getElemento(List<Integer> numeros, int posicao){
+        long ini = System.currentTimeMillis();
+        Integer elemento = numeros.get(posicao);
+        long fim = System.currentTimeMillis();
+        return fim-ini;
+    }
+
     public static void main(String[] args) {
 
         System.out.println("**** ArrayList vs LinkedList ***");
 
         List<Integer> numerosArrayList = new ArrayList<>();
         List<Integer> numerosLinkedList = new LinkedList<>();
-        int quantidadeElementos = 10000000;
+        int quantidadeElementos = 1000000;
 
+        //inserção no fim da lista
         String tempoArrayList  = String.valueOf(insereElementosNo(numerosArrayList, quantidadeElementos)).concat("ms");
         String tempoLinkedList = String.valueOf(insereElementosNo(numerosLinkedList, quantidadeElementos)).concat("ms");
 
         System.out.println("Inserção na ArrayList demorou  " + tempoArrayList);
         System.out.println("Inserção na LinkedList demorou " + tempoLinkedList);
 
+        //inserção no inicio da lista
+        tempoArrayList  = String.valueOf(insereElementosInicio(numerosArrayList, quantidadeElementos)).concat("ms");
+        tempoLinkedList = String.valueOf(insereElementosInicio(numerosLinkedList, quantidadeElementos)).concat("ms");
+
+        System.out.println("Inserção no início da ArrayList demorou  " + tempoArrayList);
+        System.out.println("Inserção no início da LinkedList demorou " + tempoLinkedList);
+
+        //remoção elemento da lista
         tempoArrayList = String.valueOf(removePrimeirosElementos(numerosArrayList)).concat("ms");
         tempoLinkedList = String.valueOf(removePrimeirosElementos(numerosLinkedList)).concat("ms");
 
         System.out.println("Remoção da ArrayList demorou  " + tempoArrayList);
         System.out.println("Remoção da LinkedList demorou " + tempoLinkedList);
+
+        //busca elemento da lista
+        tempoArrayList = String.valueOf(getElemento(numerosArrayList, 10000)).concat("ms");
+        tempoLinkedList = String.valueOf(getElemento(numerosLinkedList, 10000)).concat("ms");
+
+        System.out.println("Busca da ArrayList demorou  " + tempoArrayList);
+        System.out.println("Busca da LinkedList demorou " + tempoLinkedList);
     }
 
 }
