@@ -1,4 +1,4 @@
-package oca.collections.immutable;
+package ocp.collections.immutable;
 
 public class Course {
 

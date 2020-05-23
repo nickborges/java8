@@ -1,20 +1,20 @@
-package oca.collections.equals;
+package ocp.collections.equals;
 
-public class SetMain {
+public class ListMain {
 
     public static void main(String[] args) {
 
         Curso java = new Curso("Java");
 
-        AlunoSet aluno = new AlunoSet("Fulano");
+        AlunoList aluno = new AlunoList("Fulano");
         aluno.matricula(java);
 
-        AlunoSet aluno2 = new AlunoSet("Fulano");
+        AlunoList aluno2 = new AlunoList("Fulano");
         aluno2.matricula(java);
 
         System.out.println(aluno.getCursos().equals(aluno2.getCursos()));
 
-        //busca na tabela de espalhamento
+        //busca comparando elemento à elemento até encontrar
         System.out.println(aluno.matriculado(java));
 
     }

@@ -1,4 +1,4 @@
-package oca.collections.set;
+package ocp.collections.set;
 
 public final class Curso {
 

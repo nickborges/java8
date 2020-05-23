@@ -1,4 +1,4 @@
-package oca.collections.binarysearch;
+package ocp.collections.binarysearch;
 
 import java.util.Arrays;
 

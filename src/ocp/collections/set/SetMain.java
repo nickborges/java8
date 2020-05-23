@@ -1,4 +1,4 @@
-package oca.collections.set;
+package ocp.collections.set;
 
 public class SetMain {
 
@@ -8,6 +8,7 @@ public class SetMain {
         aluno.matricula(new Curso("Java"));
         aluno.matricula(new Curso("Python"));
         aluno.matricula(new Curso("Rest"));
+        aluno.matricula(new Curso("Spring Boot"));
         aluno.matricula(new Curso("Spring Boot"));
 
         System.out.println(aluno);

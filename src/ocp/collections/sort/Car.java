@@ -1,16 +1,20 @@
-package oca.collections.equals;
+package ocp.collections.sort;
 
-public final class Curso {
+public class Car {
 
     private String nome;
 
-    public Curso(String nome) {
+    public Car(String nome){
         this.nome = nome;
+    }
+
+    public String getNome(){
+        return nome;
     }
 
     @Override
     public String toString() {
-        return "Curso{" +
+        return "Car{" +
                 "nome='" + nome + '\'' +
                 '}';
     }

@@ -1,4 +1,4 @@
-package oca.collections.equals;
+package ocp.collections.equals;
 
 import java.util.*;
 
