@@ -1,7 +1,5 @@
 package oca.collections.immutable;
 
-import java.util.Arrays;
-
 public class ImmutableCollectionMain {
 
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package oca.collections;
+package oca.collections.linkedlist;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
