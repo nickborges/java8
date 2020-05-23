@@ -14,7 +14,7 @@
     * comparar um elemento: pelo método contains, feito através de uma tabela de espalhamento busca o elemento mais rápido que a List.
     * HashSet: adiciona em ordem aleatória
     * LinkedHashSet: adiciona em ordem
-    * TreeSet: ?
+    * TreeSet: ordena os seus elementos na hora da inserção. Qual é o critério da ordenação depende e pode ser definido através de um Comparator.
     
 #### Resumo
 * List é uma sequência e aceita elementos duplicados. Set não aceita duplicados e não define ordem(se não for utilizado LinkedHashSet). 
