@@ -1,4 +1,4 @@
-package more;
+package more.threads;
 
 public class ThreadMain {
 

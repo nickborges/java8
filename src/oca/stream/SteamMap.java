@@ -12,7 +12,11 @@ public class SteamMap {
         List<ClassA> classAList = Arrays.asList(new ClassA("A", 20));
         List<ClassB> classBList = new ArrayList<>();
 
-        classBList.addAll(classAList.stream().map(ClassB::new).collect(Collectors.toList()));
+        classBList.addAll(
+                classAList.stream()
+                        .map(ClassB::new)
+                        .collect(Collectors.toList())
+        );
 
         System.out.println(classBList);
 

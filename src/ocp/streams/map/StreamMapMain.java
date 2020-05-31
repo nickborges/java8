@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class StreamMain {
+public class StreamMapMain {
 
 	static void map(List<String> words){
 		System.out.println("map = ");
