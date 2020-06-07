@@ -12,8 +12,10 @@ public enum EnumStringToBoolean {
     }
 
     public static Boolean fromString(String paramString){
+        validaParamString(paramString);
+
         return EnumStringToBoolean.valueOf(
-                paramString
+                paramString.toUpperCase()
         ).getBooleanValue();
     }
 
@@ -21,4 +23,10 @@ public enum EnumStringToBoolean {
         return this.booleanValue;
     }
 
+    private static void validaParamString(String paramString){
+        if(!"S".equalsIgnoreCase(paramString)
+                && !"N".equalsIgnoreCase(paramString)){
+            throw new RuntimeException("Parâmetro inválido, deve ser S ou N.");
+        }
+    }
 }

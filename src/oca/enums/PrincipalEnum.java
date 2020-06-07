@@ -3,12 +3,12 @@ package oca.enums;
 public class PrincipalEnum {
 
 	private static void enumConvert(){
-		Boolean result1 = EnumStringToBoolean.fromString("S");
+		Boolean result1 = EnumStringToBoolean.fromString("s");
 		Boolean result2 = EnumStringToBoolean.fromString("N");
 		System.out.println(result1);
 		System.out.println(result2);
 
-		String result3 = EnumBooleanToString.fromBoolean(Boolean.TRUE);
+		String result3 = EnumBooleanToString.fromBoolean(true);
 		String result4 = EnumBooleanToString.fromBoolean(Boolean.FALSE);
 		System.out.println(result3);
 		System.out.println(result4);
