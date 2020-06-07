@@ -4,7 +4,6 @@ public enum EnumStringToBoolean {
     S(Boolean.TRUE),
     N(Boolean.FALSE);
 
-    private String stringValue;
     private Boolean booleanValue;
 
     EnumStringToBoolean(Boolean booleanValue) {
