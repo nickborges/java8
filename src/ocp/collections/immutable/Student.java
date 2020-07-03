@@ -25,4 +25,11 @@ public class Student {
         this.courses.add(course);
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", courses=" + courses +
+                '}';
+    }
 }
